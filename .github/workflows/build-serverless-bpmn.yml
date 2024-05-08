@@ -2,3 +2,7 @@ name: Create serverless BPMN Cloud App
 
 on:
   workflow_dispatch:
+
+jobs:
+  build_and_upload:
+    name: Build & Upload BPMN Ent Cloud Plugin
