@@ -6,3 +6,12 @@ on:
 jobs:
   build_and_upload:
     name: Build & Upload BPMN Ent Cloud Plugin
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build Cloud Plugin (BPMN)
+        uses: ./.github/actions/cloud/build-serverless-plugin
+        with:
+          build_path: vBCP/app-cloud
+          artifact_name: bpmn-ent-cloud
