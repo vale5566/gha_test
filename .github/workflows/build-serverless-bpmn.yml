@@ -1,0 +1,4 @@
+name: Create serverless BPMN Cloud App
+
+on:
+  workflow_dispatch:
